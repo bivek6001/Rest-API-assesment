@@ -6,8 +6,9 @@ const taskRoutes=require("./routers/task-router.js");
 const feedbackRoutes=require("./routers/feedback-router.js");
 const performanceRoutes= require("./routers/performance-router.js");
 const connectDB= require("./db.js");
-connectDB();
+
 dotenv.config();
+connectDB();
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
